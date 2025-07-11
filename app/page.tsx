@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Grid } from "@mui/material"
+import styles from "./page.module.css"
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
       </Grid>
 
       <Grid
-        size={6}
+        size={{ lg: 6, xs: 12 }}
         container
         justifyContent="center"
         alignItems="center"
@@ -67,14 +68,7 @@ export default function Home() {
         </Grid>
       </Grid>
 
-      <Grid
-        size={6}
-        style={{
-          background:
-            "linear-gradient(180deg,rgba(230, 235, 255, 1) 0%, rgba(227, 255, 239, 1) 86%, rgba(255, 255, 255, 1) 100%)",
-        }}
-        textAlign="center"
-      >
+      <Grid size={{ lg: 6 }} className={styles.image} textAlign="center">
         <Image
           src="/front.png"
           alt="Front of the building"
@@ -115,6 +109,7 @@ export default function Home() {
       <Grid
         container
         columnSpacing={4}
+        rowSpacing={4}
         padding={8}
         justifyContent="center"
         width="100%"
@@ -124,7 +119,7 @@ export default function Home() {
           textAlign="center"
           bgcolor="rgba(227, 255, 239, 1)"
           borderRadius={4}
-          padding={4}
+          padding={2}
         >
           <h1>🤝🏽</h1>
           <h2>Our commitment</h2>
