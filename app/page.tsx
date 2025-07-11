@@ -41,7 +41,9 @@ export default function Home() {
         }}
       >
         <Grid size={12}>
-          <h2 style={{ color: "#4c5dd0" }}>Your Own Professional</h2>
+          <h2 style={{ color: "#4c5dd0", marginBottom: -12 }}>
+            Your Own Professional
+          </h2>
           <h2 style={{ color: "#43c57b" }}>Local Laundromat</h2>
         </Grid>
         <Grid size={12}>
